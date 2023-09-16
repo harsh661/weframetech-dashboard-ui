@@ -51,7 +51,7 @@ const Header = () => {
       </div>
 
       <div className="flex items-center justify-between flex-wrap ml-9">
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-10 border-dark-alt">
           <People count={5} reverse />
 
           <Button label="Invite People" icon={IoPersonAdd} fill="bg-accent-purple"/>

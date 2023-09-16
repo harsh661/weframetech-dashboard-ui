@@ -1,16 +1,23 @@
-import React from 'react'
+import React from "react"
 
 interface ProgressbarProps {
-    progress: number
+  progress: number
+  withoutText?: boolean
+  color?: string
 }
 
-const Progressbar = ( {progress}: ProgressbarProps) => {
+const Progressbar = ({ progress, withoutText, color = "#6418C3" }: ProgressbarProps) => {
   return (
-    <div className='flex items-center gap-3'>
-        <p className='font-bold text-white'>Total Progress {progress}%</p>
-        <div className='w-60 h-3 bg-gray-700/50 rounded-full overflow-hidden relative'>
-            <div className='absolute h-full bg-accent-purple rounded-full' style={{width: progress + '%'}}/>
-        </div>
+    <div className="flex items-center gap-3">
+      {!withoutText && (
+        <p className="font-bold text-white">Total Progress {progress}%</p>
+      )}
+      <div className={`${withoutText ? 'h-2 w-full': 'h-3 w-60'} bg-gray-700/50 rounded-full overflow-hidden relative`}>
+        <div
+          className="absolute h-full rounded-full"
+          style={{ width: progress + "%", background: color }}
+        />
+      </div>
     </div>
   )
 }

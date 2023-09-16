@@ -13,13 +13,13 @@ const People = ({ count, reverse }: Props) => {
     peopleCount = 5
   }
   return (
-    <div className="items-center relative inline-block h-10" style={{width: width}}>
+    <div className="items-center relative inline-block h-10 border-inherit" style={{width: width}}>
       {Array.from({ length: peopleCount }).map((_, index) => {
         const position = reverse ? count - index - 1 : index
         return (
           <div
             key={index}
-            className={`w-10 h-10 flex items-center justify-center rounded-full bg-off-white border-2 border-dark-alt absolute ${
+            className={`w-10 h-10 flex items-center justify-center rounded-full bg-off-white border-2 border-inherit absolute ${
               peopleCount >= 5 && reverse && "first:bg-accent-pink"
             }`}
             style={{ left: `${position * 30}px`, zIndex: count - index }}
