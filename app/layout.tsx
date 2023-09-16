@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} bg-dark01 flex`}>
         <Sidebar />
-        <main className='w-full h-full'>
+        <main className='w-full h-full lg:ml-[345px]'>
           <Navbar />
           {children}
         </main>

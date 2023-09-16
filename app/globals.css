@@ -7,3 +7,9 @@ html,
 body {
   height: 100%;
 }
+
+@media screen and (min-width: 1024px) {
+  .sidebar-width {
+    width: calc(100vw - 345px);
+  }
+}

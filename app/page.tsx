@@ -5,9 +5,12 @@ import TodoWrapper from "@/components/todos/TodoWrapper"
 
 export default function Home() {
   return (
-    <section className="py-5 px-10">
+    <section
+      style={{ height: "calc(100dvh - 100px)" }}
+      className="py-5 px-5 xl:px-10 sidebar-width overflow-x-scroll"
+    >
       <Header />
-      <div className="flex pt-7 gap-10">
+      <div className="flex pt-7 gap-10 overflow-scroll">
         {todoData.map((item, index) => {
           return (
             <TodoWrapper key={item.title + index} title={item.title}>
