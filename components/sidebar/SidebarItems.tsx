@@ -13,7 +13,7 @@ const SidebarItems = ({
 }: SidebarLink) => {
   return (
     <div
-      className={`flex items-center justify-between py-2 ${
+      className={`flex items-center justify-between py-2 cursor-pointer hover:text-accent-purple ${
         selected ? "text-accent-purple" : "text-main-text"
       }`}
     >
