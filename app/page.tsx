@@ -1,5 +1,9 @@
+import Header from "@/components/header/Header";
+
 export default function Home() {
   return (
-    <h1>home</h1>
+    <section className="py-5 px-10">
+      <Header />
+    </section>
   )
 }
