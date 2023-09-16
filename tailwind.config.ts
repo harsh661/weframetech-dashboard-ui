@@ -11,11 +11,13 @@ const config: Config = {
       colors: {
         "dark01": "#0d0b20",
         "dark-alt": "#15132B",
+        "dark-blue": "#211A75",
         "accent-blue": "#5ECFFF",
         "accent-pink": "#E328AF",
         "accent-purple": "#6418C3",
         "main-text": "#7879F1",
         "off-white": "#c7c7c7",
+        "gray-text": "#aaaaaa"
       },
     },
   },

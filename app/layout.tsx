@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-dark01`}>
+      <body className={`${font.className} bg-dark01 flex`}>
         <Sidebar />
-        <main>
+        <main className='w-full h-full'>
           <Navbar />
           {children}
         </main>

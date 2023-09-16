@@ -21,7 +21,7 @@ const Banner = () => {
 
 const Sidebar = () => {
   return (
-    <section className="bg-dark-alt h-full w-full max-w-[345px] absolute left-0 flex flex-col px-12">
+    <section className="bg-dark-alt h-full w-full max-w-[345px] flex flex-col px-12">
       <div className="flex items-center justify-between py-10 shadow-md">
         <h1 className="text-2xl text-white w-full text-center">weframetech</h1>
         <span className="text-main-text">
