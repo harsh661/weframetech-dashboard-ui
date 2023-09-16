@@ -83,7 +83,7 @@ const Navbar = () => {
           {/* User image goes here */}
         </div>
         <div className="flex flex-col justify-between">
-          <h3 className="text-off-white font-bold">Instructor Roy</h3>
+          <h3 className="text-off-white font-bold">Instructor Day</h3>
           <span className="text-sm text-main-text">Super Admin</span>
         </div>
         <AiFillCaretDown size={20} className="text-accent-purple"/>
