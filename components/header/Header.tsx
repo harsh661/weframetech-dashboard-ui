@@ -48,8 +48,8 @@ const Header = () => {
             </h2>
             <p className="text-sm">Sunnyvale, Ca</p>
           </div>
-          <div className="rounded-md aspect-square w-14 bg-white">
-            {/* Company's logo */}
+          <div className="rounded-md aspect-square w-14 bg-white p-2">
+            <img src="https://i.ibb.co/pXhKL8R/pie-chart.png" alt="logo" />
           </div>
           <BiDotsVerticalRounded size={25} className="hidden lg:block"/>
         </div>
